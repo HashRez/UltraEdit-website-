@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV using flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            gap: 60vw;
+            background-color: rgb(65, 61, 61);
+            color: white;
+        }
+        .logo{
+            display: flex;
+        }
+        .logo img{
+            width: 50px;
+            height: 55px;
+            margin: 25px;
+        }
+        .logo span{
+            justify-self: center;
+            align-self: center;
+            font-size: 30px;
+        }
+        .items{
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        .download{
+            display:grid;
+            grid-template-areas:  "n1 n2 n3"
+                                 "n4 n5 n6"
+                                 "n7 n8 n9";
+        }
+        .batch{
+            width: 400px;
+            height: 90px;
+            border: 2px solid red;
+            background-color: antiquewhite;
+        }
+        .b1{
+            grid-area: n1;
+        }
+        .b2{
+            grid-area: n2;
+        }
+        .b3{
+            grid-area: n3;
+        }
+        .b4{
+            grid-area: n4;
+        }
+        .b5{
+            grid-area: n5;
+        }
+        .b6{
+            grid-area: n6;
+        }
+        .b7{
+            grid-area: n7;
+        }
+        .b8{
+            grid-area: n8;
+        }
+        .b9{
+            grid-area: n9;
+        }
+        button{
+            width: 150px;
+            height: 30px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="th.jpg" alt="logo">
+            <span>UltraEdit</span>
+        </div>
+        <div class="items">
+            <div class="prod">Products</div>
+            <div class="price">Pricing</div>
+            <div class="res">Resource</div>
+            <div class="ab">About Us</div>
+        </div>
+    </nav>
+<div class="download">
+    <div class="batch b1" >
+        <p>English</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+    <div class="batch b2">
+        <p>Portugues</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+    <div class="batch b3">
+        <p>Japanese</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+    <div class="batch b4">
+        <p>Korean</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+    <div class="batch b5">
+        <p>Chinese</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+    <div class="batch b6">
+        <p>Deutsch</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+    <div class="batch b7">
+        <p>Italiano</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+    <div class="batch b8">
+        <p>Espanol</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+    <div class="batch b9">
+        <p>francais</p>
+        <div class="link">
+            <button class="but1"><a href="ue_english_64.exe">Download 32-bit</a></button>
+            <button class="but2"><a href="ue_english_64.exe">Download 64-bit</a></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
